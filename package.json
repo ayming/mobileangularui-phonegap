@@ -1,14 +1,14 @@
 {
   "name": "mobile-angular-ui",
   "title": "webapp for phonegap",
-  "url": "http://mobileangularui.com/",
+  "url": "https://github.com/ayming/mobileangularui-phonegap",
   "author": "ayming",
   "copyright": "2014",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/toddmotto/fireshell.git"
+    "url": "https://github.com/ayming/mobileangularui-phonegap.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -20,6 +20,8 @@
     "grunt-contrib-watch": "~0.4.4",
     "connect-livereload": "~0.2.0",
     "grunt-open": "~0.2.0",
+    "grunt-weinre": "~0.0.2",
+    "grunt-concurrent": "~0.5.0",
     "matchdep": "~0.1.2"
   }
 }
