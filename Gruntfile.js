@@ -86,6 +86,21 @@ module.exports = function (grunt) {
     },
 
     /**
+     * weinre
+     * https://github.com/ChrisWren/grunt-weinre
+     * Run weinre as a grunt task for easy configuration
+     * intergration with the rest of your workflow
+     */
+    weinre: {
+      dev: {
+        options: {
+          httpPort: 8080,
+          boundHost: '-all-', // [hostname | ip address | -all-]
+        }
+      }
+    },
+
+    /**
      * JSHint
      * https://github.com/gruntjs/grunt-contrib-jshint
      * Manage the options inside .jshintrc file
@@ -193,6 +208,19 @@ module.exports = function (grunt) {
           '<%= project.assets %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
+    },
+
+    /**
+     * Run grunt tasks concurrently
+     * https://github.com/sindresorhus/grunt-concurrent
+     */
+    concurrent: {
+      target: {
+        tasks: ['watch', 'weinre'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
     }
   });
 
@@ -202,11 +230,11 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'sass:dev',
-    'jshint',
+    //'jshint',
     'concat:dev',
     'connect:livereload',
     'open',
-    'watch'
+    'concurrent:target',
   ]);
 
   /**
@@ -216,7 +244,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('build', [
     'sass:dist',
-    'jshint',
+    //'jshint',
     'uglify'
   ]);
 
