@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "tk.ayming.mobileangularui",
+            "version": "3.4.0",
+            "uri": "https://github.com/ayming/mobileangularui-phonegap.git"
+        }
+    }
+}

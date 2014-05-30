@@ -39,7 +39,7 @@ module.exports = function (grunt) {
      */
     project: {
       src: 'src',
-      app: 'app',
+      app: 'www',
       assets: '<%= project.app %>/assets',
       css: [
         '<%= project.src %>/scss/style.scss'
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           middleware: function (connect) {
-            return [lrSnippet, mountFolder(connect, 'app')];
+            return [lrSnippet, mountFolder(connect, 'www')];
           }
         }
       }
