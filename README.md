@@ -18,7 +18,9 @@ Fast mobile boilerplate integrates with the following:
 ## Document
 
 Mobile Angular UI - http://mobileangularui.com/docs/
+
 Phonegap - http://docs.phonegap.com/en/3.4.0/index.html
+
 Fireshell - https://github.com/toddmotto/fireshell/blob/master/docs/DOCS.md
 
 ## Scaffolding
