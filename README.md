@@ -25,9 +25,9 @@ Fireshell - https://github.com/toddmotto/fireshell/blob/master/docs/DOCS.md
 
 ## Debug
 
-weinre - http://localhost:8080/
+weinre - [http://localhost:8080/](http://localhost:8080/)
 
-Chrome ADB Plugin (Android 24+ is required) - https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage/details
+Chrome ADB Plugin (Android 24+ is required) - [chrome.google.com](https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage/details)
 
 ## Scaffolding
 
