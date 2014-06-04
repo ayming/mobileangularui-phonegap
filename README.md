@@ -23,6 +23,12 @@ Phonegap - http://docs.phonegap.com/en/3.4.0/index.html
 
 Fireshell - https://github.com/toddmotto/fireshell/blob/master/docs/DOCS.md
 
+## Debug
+
+weinre - http://localhost:8080/
+
+Chrome ADB Plugin (Android 24+ is required) - https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage/details
+
 ## Scaffolding
 
 ````
